@@ -21,7 +21,7 @@ class HistoryTile extends StatelessWidget {
     if (diff.inMinutes < 60) return "${diff.inMinutes} mins";
     if (diff.inHours < 24) return "${diff.inHours} hours";
     if (diff.inDays == 1) return "Yesterday ${date.hour}o'clock";
-    return "${date.month}month ${date.day}day";
+    return "${date.year} / ${date.month} / ${date.day}";
   }
 
   @override
